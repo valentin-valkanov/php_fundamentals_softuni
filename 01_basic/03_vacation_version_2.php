@@ -1,8 +1,8 @@
 <?php
 
-$input = readline();
-$type = readline();
-$day = readline();
+$numberOfPeople = readline();
+$groupType = readline();
+$weekDay = readline();
 
 $priceTable = ['Students' => [
     'Friday' => 8.45,
@@ -19,29 +19,29 @@ $priceTable = ['Students' => [
         'Saturday' => 20.00,
         'Sunday' => 22.50
     ]];
-echo calculatePrice($type, $day, $input,$priceTable);
+echo calculatePrice($groupType, $weekDay, $numberOfPeople,$priceTable);
 
-function calculatePrice($type, $day, $numberOfPeople,$priceTable) {
-    if (!isValidInput($type, $day, $numberOfPeople)) {
+function calculatePrice($groupType, $weekDay, $numberOfPeople, $priceTable) {
+    if (!isValidInput($groupType, $weekDay, $numberOfPeople)) {
         return 'Invalid input';
     }
 
-    $pricePerPerson = $priceTable[$type][$day];
-    $totalPrice = calculateTotalPrice($type, $numberOfPeople, $pricePerPerson);
+    $pricePerPerson = $priceTable[$groupType][$weekDay];
+    $totalPrice = calculateTotalPrice($groupType, $numberOfPeople, $pricePerPerson);
 
     return sprintf('Total price: %.2f', $totalPrice);
 }
 
-function isValidInput($type, $day, $numberOfPeople) {
+function isValidInput($groupType, $weekDay, $numberOfPeople) {
     $validDays = ['Friday', 'Saturday', 'Sunday'];
     $validGroups = ['Students', 'Business', 'Regular'];
 
     return is_numeric($numberOfPeople) && $numberOfPeople > 0 &&
-        in_array($type, $validGroups) && in_array($day, $validDays);
+        in_array($groupType, $validGroups) && in_array($weekDay, $validDays);
 }
 
-function calculateTotalPrice($type, $numberOfPeople, $pricePerPerson) {
-    switch ($type) {
+function calculateTotalPrice($groupType, $numberOfPeople, $pricePerPerson) {
+    switch ($groupType) {
         case 'Students':
             $discount = ($numberOfPeople >= 30) ? 0.85 : 1;
             break;
