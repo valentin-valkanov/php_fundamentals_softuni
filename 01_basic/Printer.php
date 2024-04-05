@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-class PrintSum
+class Printer
 {
     public function print(int $start, int $end): void
     {
@@ -19,5 +19,5 @@ class PrintSum
 $start = (int)readline();
 $end = (int)readline();
 
-$printer = new PrintSum();
+$printer = new Printer();
 $printer->print($start, $end);
