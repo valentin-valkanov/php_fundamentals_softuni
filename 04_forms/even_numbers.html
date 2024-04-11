@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PHP Form</title>
+</head>
+<body>
+<form>
+    N: <input type="text" name="num" />
+    <input type="submit" />
+</form>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST["num"]) && is_numeric($_POST["num"])) {
+        $num = intval($_POST["num"]);
+        for ($i = 1; $i <= $num; $i++) {
+            if ($i % 2 == 0) {
+                echo $i . " ";
+            }
+        }
+    } else {
+        echo "Invalid input. Please enter a positive integer.";
+    }
+}
+?>
+
+</body>
+</html>
