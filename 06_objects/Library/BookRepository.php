@@ -3,8 +3,13 @@
 namespace Library;
 require_once 'Library.php';
 require_once 'Book.php';
+require_once 'BookFactory.php';
 class BookRepository
 {
+    public function __construct(private BookFactory $factory)
+    {
+    }
+
     public function createListOfBooksFromInput(): array
     {
         $n = readline();
@@ -26,7 +31,7 @@ class BookRepository
             $releaseDate = $item[3];
             $Isbn = $item[4];
             $price = (float)$item[5];
-            $book = new Book($title, $author, $publisher, $releaseDate, $Isbn, $price,);
+            $book = $this->factory->create($title, $author, $publisher, $releaseDate, $Isbn, $price);
             $books[] = $book;
             }
         return $books;
