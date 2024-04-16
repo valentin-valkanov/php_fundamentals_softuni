@@ -1,7 +1,15 @@
-<?php declare(strict_types=1);
+<?php
+declare(strict_types=1);
+
+require_once 'PersonFactory.php';
+use Person\PersonFactory;
 
 class PersonRepository
 {
+    public function __construct(private PersonFactory $personFactory)
+    {
+    }
+
     public function createPeopleFromInput()
     {
         $input = readline();
@@ -16,7 +24,7 @@ class PersonRepository
 
         for($i = 0; $i < count($data); $i++){
             [$name, $id, $age] = explode(" ", $data[$i]);
-            $person = new Person($name, $id, (int)$age);
+            $person = $this->personFactory->create($name, $id, (int)$age);
             $people[] = $person;
         }
 
