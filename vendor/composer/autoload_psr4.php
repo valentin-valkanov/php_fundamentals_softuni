@@ -6,5 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Projects\\' => array($baseDir . '/06_objects/Projects'),
     'Group\\' => array($baseDir . '/06_objects/Group'),
 );
