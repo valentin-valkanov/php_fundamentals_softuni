@@ -14,23 +14,14 @@ class Family
 
    public function getOldestMember(): Person
    {
-       $max = 0;
-       $index = 0;
-       $iteration = 0;
+       $oldestPerson = $this->people[0];
        foreach ($this->people as $person)
        {
-           if($person->getAge() > $max){
-               $max = $person->getAge();
-               $index = $iteration;
-               $iteration ++;
+           if($person->getAge() > $oldestPerson->getAge()){
+               $oldestPerson = $person;
            }
        }
-       return $this->people[$index];
+       return $oldestPerson;
    }
 }
 
-$person = new Person('Acho', 23);
-$person = new Person('Pesho', 42);
-$family = new Family();
-$family->addMember($person);
-print_r($family->getOldestMember());
