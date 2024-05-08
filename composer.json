@@ -15,7 +15,8 @@
   "autoload": {
     "psr-4": {
       "Group\\": "06_objects/Group/",
-      "Projects\\": "06_objects/Projects"
+      "Projects\\": "06_objects/Projects",
+      "Family\\": "06_objects/Family"
     }
   }
 }

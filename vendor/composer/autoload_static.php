@@ -15,6 +15,10 @@ class ComposerStaticInit52a7920d11a5283962768dafdd0bb1ba
         array (
             'Group\\' => 6,
         ),
+        'F' => 
+        array (
+            'Family\\' => 7,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -25,6 +29,10 @@ class ComposerStaticInit52a7920d11a5283962768dafdd0bb1ba
         'Group\\' => 
         array (
             0 => __DIR__ . '/../..' . '/06_objects/Group',
+        ),
+        'Family\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/06_objects/Family',
         ),
     );
 
