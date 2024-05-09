@@ -18,7 +18,8 @@
       "Projects\\": "06_objects/Projects",
       "Family\\": "06_objects/Family",
       "Racing\\": "06_objects/Racing",
-      "Data\\": "06_objects/Data"
+      "Data\\": "06_objects/Data",
+      "Shopping\\": "06_objects/Shopping"
     }
   },
   "require-dev": {

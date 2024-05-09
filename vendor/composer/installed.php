@@ -3,7 +3,7 @@
         'name' => 'softuni/php-fundamentals',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'bc73b5e19f5fafb39972a22b3489755357e6e546',
+        'reference' => '7c50ba8218e3d2008ad6283404539b862df55846',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'softuni/php-fundamentals' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'bc73b5e19f5fafb39972a22b3489755357e6e546',
+            'reference' => '7c50ba8218e3d2008ad6283404539b862df55846',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

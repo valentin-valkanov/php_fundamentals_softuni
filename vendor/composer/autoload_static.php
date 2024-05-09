@@ -16,6 +16,7 @@ class ComposerStaticInit52a7920d11a5283962768dafdd0bb1ba
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\VarDumper\\' => 28,
+            'Shopping\\' => 9,
         ),
         'R' => 
         array (
@@ -47,6 +48,10 @@ class ComposerStaticInit52a7920d11a5283962768dafdd0bb1ba
         'Symfony\\Component\\VarDumper\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
+        ),
+        'Shopping\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/06_objects/Shopping',
         ),
         'Racing\\' => 
         array (
