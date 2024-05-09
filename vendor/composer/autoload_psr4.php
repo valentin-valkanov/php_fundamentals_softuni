@@ -6,8 +6,11 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
+    'Symfony\\Component\\VarDumper\\' => array($vendorDir . '/symfony/var-dumper'),
     'Racing\\' => array($baseDir . '/06_objects/Racing'),
     'Projects\\' => array($baseDir . '/06_objects/Projects'),
     'Group\\' => array($baseDir . '/06_objects/Group'),
     'Family\\' => array($baseDir . '/06_objects/Family'),
+    'Data\\' => array($baseDir . '/06_objects/Data'),
 );

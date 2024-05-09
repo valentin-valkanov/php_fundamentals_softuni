@@ -17,7 +17,11 @@
       "Group\\": "06_objects/Group/",
       "Projects\\": "06_objects/Projects",
       "Family\\": "06_objects/Family",
-      "Racing\\": "06_objects/Racing"
+      "Racing\\": "06_objects/Racing",
+      "Data\\": "06_objects/Data"
     }
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^7.0"
   }
 }

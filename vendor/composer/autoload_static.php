@@ -6,7 +6,17 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit52a7920d11a5283962768dafdd0bb1ba
 {
+    public static $files = array (
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\VarDumper\\' => 28,
+        ),
         'R' => 
         array (
             'Racing\\' => 7,
@@ -23,9 +33,21 @@ class ComposerStaticInit52a7920d11a5283962768dafdd0bb1ba
         array (
             'Family\\' => 7,
         ),
+        'D' => 
+        array (
+            'Data\\' => 5,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\VarDumper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/var-dumper',
+        ),
         'Racing\\' => 
         array (
             0 => __DIR__ . '/../..' . '/06_objects/Racing',
@@ -41,6 +63,10 @@ class ComposerStaticInit52a7920d11a5283962768dafdd0bb1ba
         'Family\\' => 
         array (
             0 => __DIR__ . '/../..' . '/06_objects/Family',
+        ),
+        'Data\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/06_objects/Data',
         ),
     );
 
