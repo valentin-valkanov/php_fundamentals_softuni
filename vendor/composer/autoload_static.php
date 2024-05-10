@@ -38,6 +38,10 @@ class ComposerStaticInit52a7920d11a5283962768dafdd0bb1ba
         array (
             'Data\\' => 5,
         ),
+        'C' => 
+        array (
+            'Company\\' => 8,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -72,6 +76,10 @@ class ComposerStaticInit52a7920d11a5283962768dafdd0bb1ba
         'Data\\' => 
         array (
             0 => __DIR__ . '/../..' . '/06_objects/Data',
+        ),
+        'Company\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/06_objects/Company',
         ),
     );
 

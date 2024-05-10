@@ -14,4 +14,5 @@ return array(
     'Group\\' => array($baseDir . '/06_objects/Group'),
     'Family\\' => array($baseDir . '/06_objects/Family'),
     'Data\\' => array($baseDir . '/06_objects/Data'),
+    'Company\\' => array($baseDir . '/06_objects/Company'),
 );

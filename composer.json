@@ -19,7 +19,8 @@
       "Family\\": "06_objects/Family",
       "Racing\\": "06_objects/Racing",
       "Data\\": "06_objects/Data",
-      "Shopping\\": "06_objects/Shopping"
+      "Shopping\\": "06_objects/Shopping",
+      "Company\\": "06_objects/Company"
     }
   },
   "require-dev": {
