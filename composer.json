@@ -20,7 +20,8 @@
       "Racing\\": "06_objects/Racing",
       "Data\\": "06_objects/Data",
       "Shopping\\": "06_objects/Shopping",
-      "Company\\": "06_objects/Company"
+      "Company\\": "06_objects/Company",
+      "Gold\\": "07_associative_arrays/Gold"
     }
   },
   "require-dev": {

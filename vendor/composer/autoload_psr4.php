@@ -12,6 +12,7 @@ return array(
     'Racing\\' => array($baseDir . '/06_objects/Racing'),
     'Projects\\' => array($baseDir . '/06_objects/Projects'),
     'Group\\' => array($baseDir . '/06_objects/Group'),
+    'Gold\\' => array($baseDir . '/07_associative_arrays/Gold'),
     'Family\\' => array($baseDir . '/06_objects/Family'),
     'Data\\' => array($baseDir . '/06_objects/Data'),
     'Company\\' => array($baseDir . '/06_objects/Company'),

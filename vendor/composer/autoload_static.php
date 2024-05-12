@@ -29,6 +29,7 @@ class ComposerStaticInit52a7920d11a5283962768dafdd0bb1ba
         'G' => 
         array (
             'Group\\' => 6,
+            'Gold\\' => 5,
         ),
         'F' => 
         array (
@@ -68,6 +69,10 @@ class ComposerStaticInit52a7920d11a5283962768dafdd0bb1ba
         'Group\\' => 
         array (
             0 => __DIR__ . '/../..' . '/06_objects/Group',
+        ),
+        'Gold\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/07_associative_arrays/Gold',
         ),
         'Family\\' => 
         array (
