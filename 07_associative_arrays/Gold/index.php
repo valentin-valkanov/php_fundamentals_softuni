@@ -10,3 +10,4 @@ require_once 'GoldMiner.php';
 
 $goldMiner = new GoldMiner();
 $goldMiner->readData();
+$goldMiner->printGoldTypes();

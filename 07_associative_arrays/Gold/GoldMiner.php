@@ -6,31 +6,26 @@ class GoldMiner
     private array $goldTypes = [];
     public function readData()
     {
-        $data = readline();
-        $i = 0;
-
-        while ($data !== 'stop'){
-            if($i % 2 == 0){
-                $type = $data;
-                $i++;
-
-            }else{
-                $karat = $data;
-                $i++;
+        while (true) {
+            $type = readline();
+            $karats = intval(readline());
+            if ($type === "stop") {
+                break;
             }
-            dump($type) . PHP_EOL;
-            dump($karat);
-
-            $this->addGold($type, $karat);
-
-            $data = readline();
+            if (key_exists($type, $this->goldTypes) == false) {
+                $this->goldTypes[$type] = $karats;
+            } else {
+                $this->goldTypes[$type] += $karats;
+            }
         }
-        dd($this->goldTypes);
     }
+
 
     public function printGoldTypes()
     {
-
+        foreach ($this->getGoldTypes() as $type => $karat){
+            echo $type." -> ".$karat."K" . PHP_EOL;
+        }
     }
 
     public function addGold($key, $value)
@@ -42,6 +37,4 @@ class GoldMiner
     {
         return $this->goldTypes;
     }
-
-
 }
