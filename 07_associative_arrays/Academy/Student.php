@@ -4,13 +4,20 @@ namespace Academy;
 class Student
 {
     private array $grades = [];
+
     public function __construct(private string $name)
     {
     }
 
-    public function getGrades(): array
+    public function getAverageGrade(): float
     {
-        return $this->grades;
+        $averageGrade = array_sum($this->grades) / count($this->grades);
+        return $averageGrade;
+    }
+
+    public function addGrade($grade)
+    {
+        $this->grades[] = $grade;
     }
 
     public function getName(): string
