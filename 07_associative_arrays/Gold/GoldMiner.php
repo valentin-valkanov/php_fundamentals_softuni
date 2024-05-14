@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 
+namespace Gold;
 class GoldMiner
 {
     private array $goldTypes = [];

@@ -16,6 +16,7 @@ class ComposerStaticInit52a7920d11a5283962768dafdd0bb1ba
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\VarDumper\\' => 28,
+            'Student\\' => 8,
             'Shopping\\' => 9,
         ),
         'R' => 
@@ -43,6 +44,10 @@ class ComposerStaticInit52a7920d11a5283962768dafdd0bb1ba
         array (
             'Company\\' => 8,
         ),
+        'A' => 
+        array (
+            'Academy\\' => 8,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -53,6 +58,10 @@ class ComposerStaticInit52a7920d11a5283962768dafdd0bb1ba
         'Symfony\\Component\\VarDumper\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
+        ),
+        'Student\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/06_objects/Student',
         ),
         'Shopping\\' => 
         array (
@@ -85,6 +94,10 @@ class ComposerStaticInit52a7920d11a5283962768dafdd0bb1ba
         'Company\\' => 
         array (
             0 => __DIR__ . '/../..' . '/06_objects/Company',
+        ),
+        'Academy\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/07_associative_arrays/Academy',
         ),
     );
 

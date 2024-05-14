@@ -21,7 +21,9 @@
       "Data\\": "06_objects/Data",
       "Shopping\\": "06_objects/Shopping",
       "Company\\": "06_objects/Company",
-      "Gold\\": "07_associative_arrays/Gold"
+      "Student\\": "06_objects/Student",
+      "Gold\\": "07_associative_arrays/Gold",
+      "Academy\\": "07_associative_arrays/Academy"
     }
   },
   "require-dev": {

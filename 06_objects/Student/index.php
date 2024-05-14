@@ -1,9 +1,8 @@
 <?php
 
-use Student\StudentRepository;
+namespace Student;
 
-require_once 'Student.php';
-require_once 'StudentRepository.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
 
 $rep = new StudentRepository();
 
