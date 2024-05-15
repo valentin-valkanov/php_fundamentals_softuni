@@ -15,7 +15,6 @@ class PersonHandler
 
             [$name, $id, $age] = explode(" ", readline());
             $person = $personFactory->create($name, $id, (int)$age);
-            dump($person);
             $this->people[] = $person;
         }
         dd($this->people);
