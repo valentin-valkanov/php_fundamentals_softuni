@@ -5,13 +5,11 @@ namespace App\Objects\Order;
 require_once __DIR__ . '/../../../vendor/autoload.php';
 $factory = new PersonFactory();
 
-$handler = new PersonHandler($factory);
+$handler = new PersonsHandler($factory);
 
 $handler->createPersonsFromInput($factory);
 
-$orderedPeople = $repository->sortPeopleByAge($people);
-
-$repository->printPeople($orderedPeople);
+$handler->printOrderedPersons();
 
 
 
