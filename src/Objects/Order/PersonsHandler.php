@@ -17,12 +17,14 @@ class PersonsHandler
             $person = $personFactory->create($name, $id, (int)$age);
             $this->people[] = $person;
         }
-        dd($this->people);
     }
 
     public function printOrderedPersons()
     {
         usort($this->people, fn($a, $b) => $a->getAge() <=> $b->getAge());
-        dd($this->people);
+
+        foreach($this->people as $person){
+            echo "{$person->getName()} with {$person->getId()} is {$person->getAge()} years old" . PHP_EOL;
+        }
     }
 }
