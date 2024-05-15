@@ -16,37 +16,10 @@ class ComposerStaticInit52a7920d11a5283962768dafdd0bb1ba
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\VarDumper\\' => 28,
-            'Student\\' => 8,
-            'Shopping\\' => 9,
-        ),
-        'R' => 
-        array (
-            'Racing\\' => 7,
-        ),
-        'P' => 
-        array (
-            'Projects\\' => 9,
-        ),
-        'G' => 
-        array (
-            'Group\\' => 6,
-            'Gold\\' => 5,
-        ),
-        'F' => 
-        array (
-            'Family\\' => 7,
-        ),
-        'D' => 
-        array (
-            'Data\\' => 5,
-        ),
-        'C' => 
-        array (
-            'Company\\' => 8,
         ),
         'A' => 
         array (
-            'Academy\\' => 8,
+            'App\\' => 4,
         ),
     );
 
@@ -59,45 +32,9 @@ class ComposerStaticInit52a7920d11a5283962768dafdd0bb1ba
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
-        'Student\\' => 
+        'App\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/06_objects/Student',
-        ),
-        'Shopping\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/06_objects/Shopping',
-        ),
-        'Racing\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/06_objects/Racing',
-        ),
-        'Projects\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/06_objects/Projects',
-        ),
-        'Group\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/06_objects/Group',
-        ),
-        'Gold\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/07_associative_arrays/Gold',
-        ),
-        'Family\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/06_objects/Family',
-        ),
-        'Data\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/06_objects/Data',
-        ),
-        'Company\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/06_objects/Company',
-        ),
-        'Academy\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/07_associative_arrays/Academy',
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 

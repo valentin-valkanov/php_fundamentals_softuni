@@ -14,16 +14,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Group\\": "06_objects/Group/",
-      "Projects\\": "06_objects/Projects",
-      "Family\\": "06_objects/Family",
-      "Racing\\": "06_objects/Racing",
-      "Data\\": "06_objects/Data",
-      "Shopping\\": "06_objects/Shopping",
-      "Company\\": "06_objects/Company",
-      "Student\\": "06_objects/Student",
-      "Gold\\": "07_associative_arrays/Gold",
-      "Academy\\": "07_associative_arrays/Academy"
+      "App\\":"src"
     }
   },
   "require-dev": {
