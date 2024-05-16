@@ -4,16 +4,19 @@ namespace App\Associative\Course;
 
 class CourseHandler
 {
-    public function __construct(private CourseRegistry $registry)
+    private CourseRegistry $registry;
+    public function __construct(
+        private CourseRegistryFactory $courseRegistryFactory,
+        private CourseFactory $courseFactory
+    )
     {
-        $this->registry = new CourseRegistry();
+        $this->registry = $this->courseRegistryFactory->create();
     }
 
     public function addCoursesFromInput()
     {
-
-
         $data = readline();
+
         while (true) {
             if ($data === 'end') {
                 break;
@@ -32,7 +35,7 @@ class CourseHandler
             }
 
             if (!$courseExists) {
-                $course = new Course($courseName);
+                $course = $this->courseFactory->create($courseName);
                 $course->addStudent($studentName);
                 $this->registry->addCourse($course);
 
